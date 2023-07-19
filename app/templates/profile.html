@@ -1,0 +1,25 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+<div id="profile-form">
+    <h2>Create Your Profile</h2>
+    <form action="{{ url_for('create_profile') }}" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}
+        </p>
+        <p>
+            {{ form.interests.label }}<br>
+            {{ form.interests(size=32) }}
+        </p>
+        <p>
+            {{ form.topics.label }}<br>
+            {{ form.topics(size=32) }}
+        </p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</div>
+{% endblock %}
+```

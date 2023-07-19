@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Roulette</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Welcome to Multi-lingual Avatar Chat Roulette</h1>
+            <p>Find people based on creative intersections of interests or conversational styles.</p>
+        </header>
+        <main>
+            <div id="profile-form"></div>
+            <div id="match-container"></div>
+            <div id="chat-container"></div>
+        </main>
+    </div>
+    <script src="/static/react-ui/build/static/js/main.js"></script>
+</body>
+</html>
